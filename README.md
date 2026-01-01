@@ -143,7 +143,6 @@ xap/
 │   │       ├── SearchForm.css     # Form styles
 │   │       ├── ResultDisplay.js   # Results display component
 │   │       └── ResultDisplay.css  # Results styles
-│   ├── Dockerfile          # Docker configuration for frontend
 │   └── package.json        # Node.js dependencies
 └── README.md
 ```
@@ -187,16 +186,6 @@ Search for a tweet by Twitter handle and date.
 3. Select a date using the date picker
 4. Click "Search"
 5. The first tweet from that user on that date will be displayed
-
-## Docker Support
-
-The frontend includes a Dockerfile for containerized deployment:
-
-```bash
-cd frontend
-docker build -t xap-frontend .
-docker run -p 3000:3000 xap-frontend
-```
 
 ## Notes
 
