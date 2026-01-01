@@ -7,7 +7,7 @@ import os
 app = Flask(__name__, static_folder='frontend/build', static_url_path='')
 CORS(app)  # Enable CORS for development
 
-BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAGmJ4gEAAAAABlAlwpmk2tRRRl7ZHbX6O5FW43w%3DiS9jAF8DccO5UhpHTiqR02WUgV5pqAbld9zgvWPzTAmNInTjnY"
+BEARER_TOKEN = "undefined"
 
 @app.route("/api/search", methods=["POST"])
 def search_tweet():
